@@ -1,0 +1,80 @@
+    .main-container { 
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact_left {
+        margin-top: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 50%;
+        max-height: 400px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact_right {
+        margin-top: 150px;
+        margin-left: 300px;
+        max-height: 400px;
+        overflow: auto;
+        width: 75%;
+    }
+
+    
+
+    
+
+    p.G222Heading1 span{
+        font-family: 'Open Sans'  !important;
+        color: rgb(0, 0, 0) !important;
+        font-size: 13.1pt ;
+        font-variant-ligatures: normal !important;
+        font-variant-caps: normal !important;
+        text-decoration: none !important;
+        letter-spacing: 0pt !important;
+        font-weight: 700 !important;
+        vertical-align: baseline !important;
+        font-style: normal !important;
+        background-color: rgba(0, 0, 0, 0) !important;
+    }
+
+    p.MsoNormal {
+        line-height: 1.9em;
+    }
+
+    [onclick^="goto"],
+    [onclick^="goto"] * {
+        font-weight: 600;
+        color: #355aa0;
+        cursor: pointer;
+        /* text-decoration: underline; */
+    }
+
+    table.MsoTableGrid {
+        width: 500px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 0;
+    }
+
+    div#holder_terms table.MsoTableGrid * {
+        text-align: center !important;
+        margin: 0;
+        padding: 6px 0;
+    }
+
+    [id^="n"] {
+        font-size: 18pt;
+        font-weight: 700;
+    }
+
+    span.list_sayi {
+        font-size: 17pt;
+        font-weight: 700;
+        margin-top: 24px;
+        /* margin-bottom: 2px; */
+        display: inline-block;
+    }

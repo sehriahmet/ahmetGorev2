@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "husky": "^9.1.4"
+  },
+  "dependencies": {
+    "summernote": "^0.8.20"
+  }
+}
