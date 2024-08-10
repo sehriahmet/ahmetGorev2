@@ -18,6 +18,8 @@
         <div id="editor" name="editordata"></div>
         <button id="save-btn">Save</button>
     </form>
+
+    <button id="html-page" style="margin-top: 20px;"> Go to Html Page </button>
     
     <script>
         $(document).ready(function() {
@@ -36,6 +38,10 @@
             });
         });
         
+        });
+
+        document.getElementById('html-page').addEventListener('click', function() {
+            window.location.href = window.open('/test.html', '_blank');
         });
     </script>
 
