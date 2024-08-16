@@ -22,9 +22,9 @@
         width: 75%;
     }
 
-    
-
-    
+    a:hover {
+        opacity: 60%;
+    }
 
     p.G222Heading1 span{
         font-family: 'Open Sans'  !important;
@@ -44,14 +44,6 @@
         line-height: 1.9em;
     }
 
-    [onclick^="goto"],
-    [onclick^="goto"] * {
-        font-weight: 600;
-        color: #355aa0;
-        cursor: pointer;
-        /* text-decoration: underline; */
-    }
-
     table.MsoTableGrid {
         width: 500px;
         left: 0;
@@ -64,17 +56,4 @@
         text-align: center !important;
         margin: 0;
         padding: 6px 0;
-    }
-
-    [id^="n"] {
-        font-size: 18pt;
-        font-weight: 700;
-    }
-
-    span.list_sayi {
-        font-size: 17pt;
-        font-weight: 700;
-        margin-top: 24px;
-        /* margin-bottom: 2px; */
-        display: inline-block;
     }

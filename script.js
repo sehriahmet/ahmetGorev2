@@ -8,6 +8,13 @@ console.log(allTitles);
 for (var i =0; i< allTitles.length; i++) {
     console.log(allTitles[i].outerHTML);
 
+    anchorElement = allTitles[i].querySelector('a');
+    if (anchorElement) {
+        newHrefValue = (extractFragment(anchorElement.getAttribute('href')));
+        anchorElement.setAttribute('href', '#' + newHrefValue);
+        anchorElement.setAttribute('name', newHrefValue);
+    }
+    
     allTitlesArea.innerHTML += allTitles[i].outerHTML;
 
 }
@@ -38,7 +45,7 @@ function nameToHref(insideAnchorElement) {
         insideAnchorElement.setAttribute('href', '#' + nameValue);
     }
 
-    insideAnchorElement.setAttribute('name', 'anlamsiz');
+    insideAnchorElement.setAttribute('name', 'none');
 
     while (insideAnchorElement.nextSibling) {
         insideAnchorElement.appendChild(insideAnchorElement.nextSibling);
@@ -46,6 +53,29 @@ function nameToHref(insideAnchorElement) {
 }
 
 addAnchorElement();
+
+function extractFragment(href) {
+    var hashIndex = href.indexOf('#');
+    return hashIndex !== -1 ? href.substring(hashIndex + 1) : '';
+}
+
+// this function helps to remove elements that don't have a tag
+/*
+function filterAllTitlesArea () {
+    var listedItems = allTitlesArea.querySelectorAll('.G222Heading1');
+
+    for (var i = 0; i < listedItems.length; i++) {
+        var insideAnchorElement = listedItems[i].querySelector('a');
+
+        if (!insideAnchorElement) {
+            listedItems[i].remove();
+        }
+
+    }
+}
+
+filterAllTitlesArea();
+*/
 
 // For the note -> matbe regex can be used to accomplish the solution
 /*
